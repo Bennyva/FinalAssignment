@@ -66,6 +66,12 @@ function init(): void {
 
 }
 
+var t2p = function (t) { return t * TILE; },
+    p2t = function (p) { return Math.floor(p / TILE); }
+
+var COLOR = { BLACK: '#000000', YELLOW: '#ECD078', BRICK: '#D95B43', PINK: '#C02942', PURPLE: '#542437', GREY: '#333', SLATE: '#53777A' },
+    COLORS = [COLOR.BLACK, COLOR.YELLOW, COLOR.BRICK, COLOR.PINK, COLOR.PURPLE, COLOR.GREY];
+
 // Game Loop
 function gameLoop(event): void {
 
